@@ -1,3 +1,6 @@
 [submodule "bundle/mimicpak"]
 	path = bundle/mimicpak
 	url = https://github.com/vim-scripts/mimicpak.git
+[submodule "bundle/vdebug"]
+	path = bundle/vdebug
+	url = https://github.com/joonty/vdebug.git
