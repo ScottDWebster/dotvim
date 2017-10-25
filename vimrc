@@ -2,17 +2,11 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
-set rtp+=~/vimfiles/bundle/Vundle.vim
-let path='~/vimfiles/bundle'
+set rtp+=~/.vim/bundle/Vundle.vim
+let path='~/.vim/bundle'
 call vundle#begin(path)
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-" Vdebug DBGP remote dubugging
-Plugin 'joonty/vdebug.git' 
-
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -30,6 +24,10 @@ Plugin 'joonty/vdebug.git'
 " Avoid a name conflict with L9
 "Plugin 'user/L9', {'name': 'newL9'}
 
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+" Vdebug DBGP remote dubugging
+Plugin 'joonty/vdebug.git'
 " Fugitive git wrapper for vim
 Plugin 'tpope/vim-fugitive'
 " Mimicpak colorscheme package
