@@ -4,14 +4,15 @@ Installation:
 
 Create symlinks:
 
-#   On Windows:
+    On Windows:
 
-    cd %HOMEPATH%
-    mklink /D vimfiles .vimrc   # create a directory link to .vim call vimfiles
+        cd %HOMEPATH%
+        mklink /D vimfiles .vimrc   # create a directory link to .vim call vimfiles
     
-#   On Linux/Unix (not necessary as vim checks for ~/.vimrc and then ~/.vim/vimrc) 
-    ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
+    On Linux/Unix (not necessary as vim checks for ~/.vimrc and then ~/.vim/vimrc) 
+   
+        ln -s ~/.vim/vimrc ~/.vimrc
+        ln -s ~/.vim/gvimrc ~/.gvimrc
 
 Switch to the `~/.vim` directory, and fetch submodules:
 
