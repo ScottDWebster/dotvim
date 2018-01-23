@@ -56,6 +56,7 @@ filetype plugin indent on    " required
 
 :set nu
 :set ts=3
+:set shiftwidth=3
 :syn on
 :set linebreak
 :colorscheme astroboy
