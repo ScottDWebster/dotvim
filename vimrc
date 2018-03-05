@@ -60,3 +60,22 @@ filetype plugin indent on    " required
 :syn on
 :set linebreak
 :colorscheme astroboy
+:set guioptions-=t
+:set autoindent
+:set smartindent
+:set guitablabel=%m\[%N\]%t
+
+" Experimenting with a status line setting
+:set statusline=%h%w%m%t%y%=%(Line[%4l/%4L]\ Col[%3c/%3v]%)
+" Always display statusline (0=never 1=only w/ 2+ windows 2=always)
+:set laststatus=2
+
+" Fix for strange issue on my Win7 system where it says the
+" file has changed since last  save when it hasn't 
+" :edit reloads the file from disk
+if has('win16') || has('win32') || has('win64')
+	:autocmd BufWritePost * :edit
+endif
+
+" Python specific setting for tab expansion
+"autocmd FileType python setlocal expandtab
