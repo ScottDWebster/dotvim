@@ -13,3 +13,15 @@
 [submodule "bundle/Vundle.vim"]
 	path = bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule "Cafe.vim"]
+	path = ./
+	url = https://github.com/ScottDWebster/Cafe.vim
+[submodule "Serpentes.vim"]
+	path = ./
+	url = https://github.com/ScottDWebster/Serpentes.vim
+[submodule "pack/Cafe"]
+	path = pack/Cafe
+	url = https://github.com/ScottDWebster/Cafe
+[submodule "pack/Serpentes"]
+	path = pack/Serpentes
+	url = https://github.com/ScottDWebster/Serpentes
