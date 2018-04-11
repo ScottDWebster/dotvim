@@ -72,7 +72,7 @@ filetype plugin indent on    " required
 :set autoindent
 " Enable smartindent
 :set smartindent
-" Set GUI tab lebels to Modified/modifiable flag, tab number, filename (tail)
+" Set GUI tab labels to Modified/modifiable flag, tab number, filename (tail)
 :set guitablabel=%m\[%N\]%t
 
 " Set status line to:
