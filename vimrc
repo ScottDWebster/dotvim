@@ -49,23 +49,50 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
+"""""""""""  END OF VUNDLE CONFIG """""""""""
 
 " My stuff
+" Enable filetype plugins
 :filetype plugin on
-
+" Enable line numbering
 :set nu
+" Set tabstops to 3 characters
 :set ts=3
+" Set indentation shift to 3 characters
 :set shiftwidth=3
+" Enable syntax highlighting
 :syn on
+" Enable linebreaks between words
 :set linebreak
+" Set colorscheme to astroboy
 :colorscheme astroboy
+" Disable tearoff menu items
 :set guioptions-=t
+" Enable autoindent
 :set autoindent
+" Enable smartindent
 :set smartindent
+" Set GUI tab lebels to Modified/modifiable flag, tab number, filename (tail)
 :set guitablabel=%m\[%N\]%t
 
-" Experimenting with a status line setting
+" Set status line to:
+" %h  = help buffer flag
+" %w  = preview window flag
+" %m  = modified/modifiable flag
+" %t  = file name (tail)
+" %y  = type of file in buffer
+" %=  = separation point between left and right aligned sections
+" %(  = start of item group
+" Line[ (literal sting)
+" %4l = line number formatted for 4 digits
+" /     (literal string)
+" %4L = number of lines in file formatted for 4 digits
+" ]\ Col[   (literal string)
+" %3c = column number formatted for 3 digits
+" /     (literal string)
+" %3v = virtual column number
+" ]     (literal sting)
+" %)  = end of item group
 :set statusline=%h%w%m%t%y%=%(Line[%4l/%4L]\ Col[%3c/%3v]%)
 " Always display statusline (0=never 1=only w/ 2+ windows 2=always)
 :set laststatus=2
