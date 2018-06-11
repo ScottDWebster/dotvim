@@ -77,6 +77,7 @@ filetype plugin indent on    " required
 " Set GUI tab labels to Modified/modifiable flag, tab number, filename (tail)
 :set guitablabel=%m\[%N\]%t
 
+" ### Status Line Settings ##################################################
 " Set status line to:
 " %h  = help buffer flag
 " %w  = preview window flag
@@ -99,6 +100,7 @@ filetype plugin indent on    " required
 :set statusline=%h%w%m%t%y%=%(Line[%4l/%4L]\ Col[%3c/%3v]%)
 " Always display statusline (0=never 1=only w/ 2+ windows 2=always)
 :set laststatus=2
+" ################################################## Status Line Settings ###
 
 " Fix for strange issue on my Win7 system where it says the
 " file has changed since last  save when it hasn't 
