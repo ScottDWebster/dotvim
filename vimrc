@@ -109,5 +109,9 @@ if has('win16') || has('win32') || has('win64')
 	:autocmd BufWritePost * :edit
 endif
 
+" Set scroll up/down to one line at a time
+: map <ScrollWheelUp> <C-Y>
+: map <ScrollWheelDown> <C-E>
+
 " Python specific setting for tab expansion
 "autocmd FileType python setlocal expandtab
