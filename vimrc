@@ -36,6 +36,8 @@ Plugin 'vim-scripts/mimicpak'
 Plugin 'sirtaj/vim-openscad'
 " SimplyFold Python folding
 Plugin 'tmhedberg/SimpylFold'
+" FastFold to speed up fold computation
+Plugin 'Konfekt/FastFold'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -96,8 +98,8 @@ filetype plugin indent on    " required
 " %3v = virtual column number
 " ]     (literal sting)
 " %)  = end of item group
-":set statusline=%h%w%m%t%y%{FugitiveStatusline()}%=%(Line[%4l/%4L]\ Col[%3c/%3v]%)
-:set statusline=%h%w%m%t%y%=%(Line[%4l/%4L]\ Col[%3c/%3v]%)
+:set statusline=%h%w%m%t%y%{FugitiveStatusline()}%=%(Line[%4l/%4L]\ Col[%3c/%3v]%)
+":set statusline=%h%w%m%t%y%=%(Line[%4l/%4L]\ Col[%3c/%3v]%)
 " Always display statusline (0=never 1=only w/ 2+ windows 2=always)
 :set laststatus=2
 " ################################################## Status Line Settings ###
