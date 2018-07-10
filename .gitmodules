@@ -1,6 +1,3 @@
-[submodule "bundle/mimicpak"]
-	path = bundle/mimicpak
-	url = https://github.com/vim-scripts/mimicpak.git
 [submodule "bundle/vdebug"]
 	path = bundle/vdebug
 	url = https://github.com/joonty/vdebug.git
@@ -19,3 +16,9 @@
 [submodule "pack/Serpentes"]
 	path = pack/Serpentes
 	url = https://github.com/ScottDWebster/Serpentes.git
+[submodule "bundle\\SimpylFold"]
+	path = bundle\\SimpylFold
+	url = https://github.com/tmhedberg/SimpylFold
+[submodule "bundle\\FastFold"]
+	path = bundle\\FastFold
+	url = https://github.com/Konfekt/FastFold
