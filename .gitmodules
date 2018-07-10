@@ -16,9 +16,9 @@
 [submodule "pack/Serpentes"]
 	path = pack/Serpentes
 	url = https://github.com/ScottDWebster/Serpentes.git
-[submodule "bundle\\SimpylFold"]
-	path = bundle\\SimpylFold
+[submodule "bundle/SimpylFold"]
+	path = bundle/SimpylFold
 	url = https://github.com/tmhedberg/SimpylFold
-[submodule "bundle\\FastFold"]
-	path = bundle\\FastFold
+[submodule "bundle/FastFold"]
+	path = bundle/FastFold
 	url = https://github.com/Konfekt/FastFold
