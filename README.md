@@ -8,9 +8,9 @@ Create symlinks:
 
         cd %HOMEPATH%
         mklink /D vimfiles .vim   # create a directory link to .vim called vimfiles
+
+    On Linux/Unix (not necessary as vim checks first for ~/.vimrc and then ~/.vim/vimrc)
     
-    On Linux/Unix (not necessary as vim checks for ~/.vimrc and then ~/.vim/vimrc) 
-   
         ln -s ~/.vim/vimrc ~/.vimrc
         ln -s ~/.vim/gvimrc ~/.gvimrc
 

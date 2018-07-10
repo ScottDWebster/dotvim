@@ -25,7 +25,7 @@ call vundle#begin(path)
 "Plugin 'user/L9', {'name': 'newL9'}
 
 " let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 " Vdebug DBGP remote dubugging
 Plugin 'joonty/vdebug.git'
 " Fugitive git wrapper for vim
@@ -34,6 +34,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/mimicpak'
 " OpenSCAD syntax highlighting
 Plugin 'sirtaj/vim-openscad'
+" SimplyFold Python folding
+Plugin 'tmhedberg/SimpylFold'
+" FastFold to speed up fold computation
+Plugin 'Konfekt/FastFold'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -75,6 +79,7 @@ filetype plugin indent on    " required
 " Set GUI tab labels to Modified/modifiable flag, tab number, filename (tail)
 :set guitablabel=%m\[%N\]%t
 
+" ### Status Line Settings ##################################################
 " Set status line to:
 " %h  = help buffer flag
 " %w  = preview window flag
@@ -93,9 +98,11 @@ filetype plugin indent on    " required
 " %3v = virtual column number
 " ]     (literal sting)
 " %)  = end of item group
-:set statusline=%h%w%m%t%y%=%(Line[%4l/%4L]\ Col[%3c/%3v]%)
+:set statusline=%h%w%m%t%y%{FugitiveStatusline()}%=%(Line[%4l/%4L]\ Col[%3c/%3v]%)
+":set statusline=%h%w%m%t%y%=%(Line[%4l/%4L]\ Col[%3c/%3v]%)
 " Always display statusline (0=never 1=only w/ 2+ windows 2=always)
 :set laststatus=2
+" ################################################## Status Line Settings ###
 
 " Fix for strange issue on my Win7 system where it says the
 " file has changed since last  save when it hasn't 
@@ -103,6 +110,10 @@ filetype plugin indent on    " required
 if has('win16') || has('win32') || has('win64')
 	:autocmd BufWritePost * :edit
 endif
+
+" Set scroll up/down to one line at a time
+: map <ScrollWheelUp> <C-Y>
+: map <ScrollWheelDown> <C-E>
 
 " Python specific setting for tab expansion
 "autocmd FileType python setlocal expandtab
