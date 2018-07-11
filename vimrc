@@ -26,8 +26,6 @@ call vundle#begin(path)
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-" Vdebug DBGP remote dubugging
-Plugin 'joonty/vdebug.git'
 " Fugitive git wrapper for vim
 Plugin 'tpope/vim-fugitive'
 " Mimicpak colorscheme package
@@ -121,10 +119,7 @@ endif
 
 
 
-" Testing some things for possible use in a plugin
+" Windows specific settings
 if has('win16') || has('win32') || has('win64')
-	:let g:SerpentesPythonPath = 'C:\bin\Anaconda3\python.exe'
-	:let g:SerpentesPythonWPath = 'C:\bin\Anaconda3\pythonw.exe'
-	:let g:SerpentesIdlePath = 'C:\bin\Anaconda3\Scripts\idle-script.py'
-	:let g:SerpentesThonnyPath = 'C:\Users\Scott\AppData\Local\Programs\Thonny\thonny.exe'
+	:set pythonthreedll=python37.dll
 endif
