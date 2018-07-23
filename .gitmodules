@@ -19,6 +19,3 @@
 [submodule "bundle/FastFold"]
 	path = bundle/FastFold
 	url = https://github.com/Konfekt/FastFold
-[submodule "bundle/mimicpak"]
-	path = bundle/mimicpak
-	url = https://github.com/vim-scripts/mimicpakhttps://github.com/vim-scripts/mimicpak.git

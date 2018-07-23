@@ -66,6 +66,8 @@ filetype plugin indent on    " required
 :syn on
 " Enable linebreaks between words
 :set linebreak
+" Set astroboy colorscheme to use a black background instead of dark grey
+: let mimic_astroboy_dark = 1
 " Set colorscheme to astroboy
 :colorscheme astroboy
 " Disable tearoff menu items
