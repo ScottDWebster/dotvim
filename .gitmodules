@@ -7,12 +7,6 @@
 [submodule "bundle/Vundle.vim"]
 	path = bundle/Vundle.vim
 	url = https://github.com/VundleVim/Vundle.vim.git
-[submodule "pack/Cafe"]
-	path = pack/Cafe
-	url = https://github.com/ScottDWebster/Cafe.git
-[submodule "pack/Serpentes"]
-	path = pack/Serpentes
-	url = https://github.com/ScottDWebster/Serpentes.git
 [submodule "bundle/SimpylFold"]
 	path = bundle/SimpylFold
 	url = https://github.com/tmhedberg/SimpylFold
