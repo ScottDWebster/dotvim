@@ -1,1 +1,1 @@
-set guifont=Monospace\ 10
+set guifont=Source\ Code\ Pro\ 11
