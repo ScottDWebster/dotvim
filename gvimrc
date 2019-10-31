@@ -1,1 +1,1 @@
-set guifont=Source\ Code\ Pro\ 11
+set guifont=Source_Code_Pro:h11:cANSI:qDRAFT
