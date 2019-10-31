@@ -37,7 +37,7 @@ Plugin 'tmhedberg/SimpylFold'
 " FastFold to speed up fold computation
 Plugin 'Konfekt/FastFold'
 " jedi-vim autocompletion library for VIM
-Plugin "davidhalter/jedi-vim"
+Plugin 'davidhalter/jedi-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
