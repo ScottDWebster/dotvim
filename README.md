@@ -21,6 +21,10 @@ Switch to the `~/.vim` directory, and fetch submodules:
     git submodule init
     git submodule update
 
+Install plugins via Vundle
+
+	Start `vim` and run `:PluginInstall`
+
 To update from GitHub:
 
     git pull origin master
