@@ -25,6 +25,8 @@ Install plugins via Vundle
 
 	Start `vim` and run `:PluginInstall`
 
+	To install from command line: `vim +PluginInstall +qall`
+
 To update from GitHub:
 
     git pull origin master
