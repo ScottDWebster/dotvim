@@ -8,7 +8,7 @@ Create symlinks:
     On Windows:
 
         cd %HOMEPATH%
-        mklink /D vimfiles .vim   # create a directory link to .vim called vimfiles
+        mklink /D .vim vimfiles  # create a directory link to vimfiles called .vim
 
     On Linux/Unix (not necessary as vim checks first for ~/.vimrc and then ~/.vim/vimrc)
     
